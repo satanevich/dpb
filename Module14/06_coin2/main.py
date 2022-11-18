@@ -1,1 +1,15 @@
-# TODO здесь писать код
+import math
+
+def check_coordinate(x, y, r):
+    return (x * x + y * y) ** 0.5 < r
+
+
+print('Введите координаты монетки:')
+coordinate_x = float(input('X: '))
+coordinate_y = float(input('Y: '))
+area = int(input('Введите радиус: '))
+
+if check_coordinate(coordinate_x, coordinate_y, area):
+    print('Монетка где-то рядом.')
+else:
+    print('Монетки в области нет.')
