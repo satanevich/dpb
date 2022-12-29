@@ -21,7 +21,11 @@ students = {
         'interests': ['languages', 'health food']
     }
 }
+pairs = []
+for i in students:
+    pairs += (i, (students[i]['age']))
 
+print('Список пар "ID студента — возраст":', pairs)
 interests, total_len = foo(students)
 print('Полный список интересов всех студентов:', ', '.join(interests))
 print('Общая длина всех фамилий студентов:', total_len)
@@ -46,5 +50,3 @@ print('Общая длина всех фамилий студентов:', total
 # my_lst = f(students)[0]
 # l = f(students)[1]
 # print(my_lst, l)
-
-
