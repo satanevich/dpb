@@ -4,4 +4,4 @@ players = {
     ("Rob", "Bobbin"): (12, 8, 2)
 }
 
-# TODO здесь писать код
+print([sum((i_name, i_score), ()) for i_name, i_score in players.items()])
